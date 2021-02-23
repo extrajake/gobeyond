@@ -423,8 +423,6 @@ ul {
   margin: auto;
   padding-bottom: 30px;
   color: white;
-  text-shadow: -1px -1px 0 #444444, 1px -1px 0 #444444, -1px 1px 0 #444444,
-    1px 1px 0 #444444;
 }
 
 .btn-text {
