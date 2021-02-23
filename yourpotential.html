@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="../../../../favicon.ico" />
+
+    <title>Product example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="product.css" rel="stylesheet" />
+  </head>
+
+  <body>
+        <nav class="navbar-large navbar navbar-static-top site-header sticky-top flex-row py-1">
+                <div class="nav-container container d-flex  flex-row justify-content-between">
+                  <a class="nav-logo Go-Beyond mt-2" style ="font-family: 'Open Sans', sans-serif;" href="index.html"><h4><span class="go">GO</span><span class="beyond"> BEYOND</span></h4></a>
+                  <a class="nav-item py-2 " href="whoweare.html">Who We Are</a>
+                  <a class="nav-item py-2 " href="whatwedo.html">What We Do</a>
+                  <a class="nav-item py-2 " href="yourpotential.html">What's Your Potential</a>
+                  <button class="nav-item apply-btn py-0 "><a class="btn-a" href="goapply.html">Go Apply</a></button>
+                </div>
+                <div class="burger">
+                  <div class="line-1"></div>
+                  <div class="line-2"></div>
+                  <div class="line-3"></div>
+                </div>
+              </nav>
+          
+              <!-----Mobile Nav---->
+          
+              <nav class="mobile-nav navbar navbar-static-top site-header sticky-top flex-row py-1" style ="background-color: #262626;">
+                  <!-- <div class="nav-container container d-flex  flex-row justify-content-between">
+                      <a class="nav-logo Go-Beyond mt-2" style ="font-family: 'Open Sans', sans-serif;" href="#"><h4><span class="go">GO</span><span class="beyond"> BEYOND</span></h4></a>
+                          <div class="mobile-nav"> -->
+                            <ul>
+                              <li><a class=" " href="whoweare.html">Who We Are</a></li>
+                              <li><a class=" " href="whatwedo.html">What We Do</a></li>
+                              <li><a class=" " href="yourpotential.html">What's Your Potential</a></li>
+                              <li><a class="btn-a" href="goapply.html">Go Apply</a></li>
+                            </ul>
+                          </div>
+              </nav>
+
+    <div
+      class="potential-board position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light"
+    >
+      <div class="col-md-5 p-lg-5 mx-auto mt-0" style="color: white;">
+        <h1 class="display-4 font-weight-normal" style="margin-top:30%;">
+          <span><strong>YOUR</strong></span
+          ><span class=""><strong> POTENTIAL</strong></span>
+        </h1>
+        <p class="lead font-weight-normal">
+          Do you have the potential to join our elite sales team? Take the quiz
+          and find out!
+        </p>
+      </div>
+    </div>
+
+    <section class="questions">
+        <div class="container">
+          <div class="row">
+                  <div class="faqs-top-section">
+                          <div class="faqs-headliner">
+                            <h1>WHAT’S YOUR SALES POTENTIAL?</h1>
+                            <h5>
+                                  A career with the Go Sales team may not be a fit for everyone, but it could it be the right fit for you. Answer these 9 questions to uncover your sales potential.
+                            </h5>
+                          </div>
+
+                          <div class="q-and-a">
+                            <div class="question question-1" id="question">
+                                  IF I WAS HIRED BY A SALES COMPANY, THE FIRST THING I WOULD DO IS:
+                              <div class="answer">
+                                    <ul id="answers">
+                                        
+                                        <label>Bring donuts to the office and learn everyone’s name. Business runs on good relationships.
+                                            <input type="radio" name="question-1" id="question-1-answer-A" value="R">
+                                        </label>
+                                        
+                                        <label>Gather as much research as I could about the company, its products, and its competitors.
+                                        <input type="radio" name="question-1" id="question-1-answer-B" value="B">
+                                    </label>
+                                        
+                                        <label>Hit the ground running. It’s all about getting results and working your way up the leaderboard.
+                                        <input type="radio" name="question-1" id="question-1-answer-C" value="C">
+                                    </label>
+                                        
+                                        <label>Focus on the company’s customer base. Who are they? What do they want and what keeps them up at night?
+                                        <input type="radio" name="question-1" id="question-1-answer-D" value="S">
+                                    </label>
+                                    </ul>
+                              </div>
+                            </div>
+                           
+                            <div class="question question-2">
+                                  IF A POTENTIAL CUSTOMER WAS INTERESTED IN A PRODUCT, THE FIRST THING I WOULD DO IS:
+                                  <div class="answer answer-2">
+                                    <div class="answer">
+                                        <ul id="answers">
+                                            <label>Educate them with detailed, accurate information about the various options available.
+                                                <input type="radio" name="question-2" id="question-2-answer-A" value="B">
+                                            </label>
+                                            <label>Ask questions that will help me determine what their level of technical expertise is.
+                                                <input type="radio" name="question-2" id="question-2-answer-B" value="S">
+                                            </label>
+                                            <label>Build up a personal connection by finding a shared interest or experience.
+                                                <input type="radio" name="question-2" id="question-2-answer-C" value="R">
+                                            </label>
+                                            <label>Create a sense of urgency by mentioning that it’s only available for a limited time.
+                                                <input type="radio" name="question-2" id="question-2-answer-D" value="C">
+                                            </label>
+                                        </ul>
+                                  </div>
+                                </div>
+                            </div>
+                            
+                            <div class="question question-3">
+                                  IF I KNOCKED ON A POTENTIAL CUSTOMER’S DOOR AND THEY TOLD ME THEY WERE JUST SITTING DOWN TO DINNER, I WOULD:
+                                  <div class="answer answer-3">
+                                    <div class="answer">
+                                        <ul id="answers">
+                                            <label>Lighten the mood with a joke about the epically bad timing salespeople have.
+                                                <input type="radio" name="question-3" id="question-3-answer-A" value="R">
+                                            </label>
+                                            <label>Tell them it’s no problem, because I only needed 30 seconds of their time.
+                                                <input type="radio" name="question-3" id="question-3-answer-B" value="C">
+                                            </label>
+                                            <label>Gather visual data about the person and their home that might help me make a sale later on.
+                                                <input type="radio" name="question-3" id="question-3-answer-C" value="B">
+                                            </label>
+                                            <label>Apologize for the interruption and ask which days and times would be more convenient.
+                                                <input type="radio" name="question-3" id="question-3-answer-D" value="S">
+                                            </label>
+                                        </ul>
+                                  </div>
+                                </div>
+                            </div>
+                            
+                            <div class="question question-4">
+                                  IF A POTENTIAL CUSTOMER SAID THEY WEREN’T INTERESTED IN A PRODUCT I WAS SELLING, I WOULD:
+                                  <div class="answer answer-4">
+                                    <div class="answer">
+                                        <ul id="answers">
+                                            <label>Mention any additional features or capabilities I hadn’t discussed with them so far.
+                                                <input type="radio" name="question-4" id="question-4-answer-A" value="B">
+                                            </label>
+                                            <label>Probe a little further to make sure they were making the choice that was best for them.
+                                                <input type="radio" name="question-4" id="question-4-answer-B" value="S">
+                                            </label>
+                                            <label>Ask them to share their objections and systematically refute every single one.
+                                                <input type="radio" name="question-4" id="question-4-answer-C" value="C">
+                                            </label>
+                                            <label>Thank them for their time and move on. It’s important to keep things friendly.
+                                                <input type="radio" name="question-4" id="question-4-answer-D" value="R">
+                                            </label>
+                                        </ul>
+                                  </div>
+                                </div>
+                            </div>
+                    
+                            
+                            <div class="question question-5">
+                                  IF A POTENTIAL CUSTOMER OF MINE SAID “NO” TO A GREAT PRODUCT I WAS SELLING, I WOULD ASSUME:
+                                  <div class="answer answer-5 answer-toggle">
+                                    <div class="answer">
+                                        <ul id="answers">
+                                            <label>My personality rubbed them the wrong way.
+                                                <input type="radio" name="question-5" id="question-5-answer-A" value="R">
+                                            </label>
+                                            <label>They didn’t fully understand what the product could actually do.
+                                                <input type="radio" name="question-5" id="question-5-answer-B" value="B">
+                                            </label>
+                                            <label>I didn’t explain the benefits in a way that fit their needs.
+                                                <input type="radio" name="question-5" id="question-5-answer-C" value="S">
+                                            </label>
+                                            <label>Honestly, customers rarely say no to me.
+                                                <input type="radio" name="question-5" id="question-5-answer-D" value="C">
+                                            </label>
+                                        </ul>
+                                  </div>
+                                </div>
+                            </div>
+                            
+                            <div class="question question-6">
+                                  WHEN I WORK IN A TEAM:
+                                  <div class="answer answer-6 answer-toggle">
+                                    <div class="answer">
+                                        <ul id="answers">
+                                            <label>I always take the role of the leader.
+                                                <input type="radio" name="question-6" id="question-6-answer-A" value="C">
+                                            </label><br>
+                                            <label>I find that there are power struggles.
+                                                <input type="radio" name="question-6" id="question-6-answer-B" value="B">
+                                            </label><br>
+                                            <label>I really enjoy the team dynamic.
+                                                <input type="radio" name="question-6" id="question-6-answer-C" value="S">
+                                            </label><br>
+                                            <label>I just go with the flow.
+                                                <input type="radio" name="question-6" id="question-6-answer-D" value="R">
+                                            </label>
+                                        </ul>
+                                  </div>
+                                </div>
+                            </div>
+                            
+                            <div class="question question-7">
+                                  IF YOU ASKED MY MY CLOSEST FRIENDS TO DESCRIBE ME, THEY’D SAY:
+                                  <div class="answer answer-7 answer-toggle">
+                                    <div class="answer">
+                                        <ul id="answers">
+                                            <label>"Hard to get to know, but super smart, focused, and dedicated."
+                                                <input type="radio" name="question-7" id="question-7-answer-A" value="B">
+                                            </label>
+                                            <label>"Works hard, parties harder, and is always up for a new challenge."
+                                                <input type="radio" name="question-7" id="question-7-answer-B" value="C">
+                                            </label>
+                                            <label>"Fun, social, easygoing, and accepting of a wide range of people."
+                                                <input type="radio" name="question-7" id="question-7-answer-C" value="R">
+                                            </label>
+                                            <label>"Quiet, thoughtful, observant, super loyal, and hates conflict."
+                                                <input type="radio" name="question-7" id="question-7-answer-D" value="S">
+                                            </label>
+                                        </ul>
+                                  </div>
+                                </div>
+                            </div>
+                            
+                            <div class="question question-8">
+                                      THE SUPERHERO QUALITY I IDENTIFY MOST WITH IS:
+                                      <div class="answer answer-8 answer-toggle">
+                                        <div class="answer">
+                                            <ul id="answers">
+                                                <label>Superman’s super-strength
+                                                    <input type="radio" name="question-8" id="question-8-answer-A" value="C">
+                                                </label><br>
+                                                <label>Batman's awesome gadgets
+                                                    <input type="radio" name="question-8" id="question-8-answer-B" value="B">
+                                                </label><br>
+                                                <label>Mystique’s shape-shifting ability
+                                                    <input type="radio" name="question-8" id="question-8-answer-C" value="S">
+                                                </label><br>
+                                                <label>Iron Man’s playful wit
+                                                    <input type="radio" name="question-8" id="question-8-answer-D" value="R">
+                                                </label><br>
+                                            </ul>
+                                      </div>
+                                    </div>
+                            </div>
+                            
+                            <div class="question question-9">
+                                  THE LAST TIME I FACED A CHALLENGE:
+                                  <div class="answer answer-9 answer-toggle">
+                                    <div class="answer">
+                                        <ul id="answers">
+                                            <label>I realized how many friends I had, because they all helped me through it.
+                                                <input type="radio" name="question-9" id="question-9-answer-A" value="R">
+                                            </label>
+                                            <label>I looked at it from every angle to figure out how to overcome it.
+                                                <input type="radio" name="question-9" id="question-9-answer-B" value="B">
+                                            </label>
+                                            <label>I put my head down and kept moving forward until I got to the other side of it.
+                                                <input type="radio" name="question-9" id="question-9-answer-C" value="C">
+                                            </label>
+                                            <label>I thought about a person I admire and did what I thought they would do.
+                                                <input type="radio" name="question-9" id="question-9-answer-D" value="S">
+                                            </label>
+                                        </ul>
+                                  </div>
+                                </div>
+                            </div> 
+                            <button class=" quiz-btn apply-btn" type="button" onclick="displayResult()">Submit</button>
+          </div>
+        </div>
+      </section>
+      <section class="text-results">
+        <div class="text results">
+            <h3 id="unhide1" class="hidden">Based on your responses, your sales profile is:</h3>
+                                <div id="Brain" class="profile profile_1 hidden">
+                    <h4>The Brain</h4>
+                    <p><strong>Your strength in sales comes from the discipline, decisiveness, and careful thought you put into the process.</strong></p>
+                    <div class="share">
+                        <a href="https://twitter.com/home?status=I%20took%20this%20quiz%20to%20test%20my%20sales%20potential.%20I%E2%80%99m%20a%20sales%20Brain.%20What%20type%20are%20you?" target="_blank">Tweet This<span class="sprite"></span></a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://gobeyond.careers/your-potential/" target="_blank">Post to Facebook<span class="sprite"></span></a>
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://gobeyond.careers/your-potential/&title=&summary=I took the Ledcor quiz to test my sales potential. I'm a sales Brain: disciplined, decisive, and careful. What's your sales potential? Take the quiz to find out." target="_blank">Share on LinkedIn<span class="sprite"></span></a>
+                    </div>
+                    <p>Where others rush in, you think things through. Where others want instant gratification, you’re willing to put in the effort and play the long game. You’re an educator with a passion for explaining product features and benefits.</p>
+<p>The best salespeople aren’t always smooth-talking, charismatic types. Great salespeople also need intelligence and a deep understanding of the products they represent. That’s especially true for products that are technologically complex, like those promoted by the Ledcor team.</p>
+<p>Your unique mix of intelligence and discipline could be right for the Ledcor outbound sales team, and we encourage you to apply.</p>
+                </div>
+                                <div id="Challenger" class="profile profile_2 hidden">
+                    <h4>The Challenger</h4>
+                    <p><strong>Your strength in sales comes from your fearlessness and determination to succeed at any cost.</strong></p>
+                    <div class="share">
+                        <a href="https://twitter.com/home?status=I%20took%20this%20quiz%20to%20test%20my%20sales%20potential.%20I%E2%80%99m%20a%20sales%20Challenger.%20What%20type%20are%20you?" target="_blank">Tweet This<span class="sprite"></span></a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://gobeyond.careers/your-potential/" target="_blank">Post to Facebook<span class="sprite"></span></a>
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://gobeyond.careers/your-potential/&title=&summary=I took the Ledcor quiz to test my sales potential. I'm a sales Challenger: fearless and determine to succeed. What's your sales potential? Take the quiz to find out." target="_blank">Share on LinkedIn<span class="sprite"></span></a>
+                    </div>
+                    <p>You believe that great things happen when people are willing to take big risks. You know what you want and you’re not afraid to go for it. If there’s a mountain, you’ll climb it. An obstacle? You’ll overcome it. If you’re not actively moving forward, you feel like you’re losing ground. And the force of your conviction carries everyone forward with you.</p>
+<p>The best salespeople have that fearless quality, because they have to hear the word “no,” overcome objections, and face rejection a hundred times for every sale they make. That’s especially true when you’re breaking in new territories as a member of Ledcor’s outbound sales team, where the challenges are great, but the rewards are even greater.</p>
+<p>Your determination and leadership potential could be right for the Ledcor outbound sales team, and we encourage you to apply.</p>
+                </div>
+                                <div id="Relater" class="profile profile_3 hidden">
+                    <h4>The Relater</h4>
+                    <p><strong>Your strength in sales comes from your ability to make genuine, positive connections with a wide range of people.</strong></p>
+                    <div class="share">
+                        <a href="https://twitter.com/home?status=I%20took%20this%20quiz%20to%20test%20my%20sales%20potential.%20I%E2%80%99m%20a%20sales%20Relater.%20What%20type%20are%20you?" target="_blank">Tweet This<span class="sprite"></span></a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://gobeyond.careers/your-potential/" target="_blank">Post to Facebook<span class="sprite"></span></a>
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://gobeyond.careers/your-potential/&title=&summary=I took the Ledcor quiz to test my sales potential. I'm a sales Relater: able to connect with customers. What's your sales potential? Take the quiz to find out." target="_blank">Share on LinkedIn<span class="sprite"></span></a>
+                    </div>
+                    <p>You’re the life of the party and everyone’s favourite person. You love being around people, and they love being around you. You’re always ready to give someone a second chance. Maybe even a third chance. You hate formality and rules. Why can’t we all just hang loose?</p>
+<p>Sales is fundamentally about people, not products. Being able to make connections, gain trust, and cultivate relationships is a valuable gift in the sales community. As a member of the Ledcor outbound sales team, you need to be able to step into a new environment, connect with strangers, and win them over quickly.</p>
+<p>Your valuable people skills could be right for the Ledcor outbound sales team, and we encourage you to apply.</p>
+                </div>
+                                <div id="Sherpa" class="profile profile_4 hidden">
+                    <h4>The Sherpa</h4>
+                    <p><strong>Your strength in sales comes from your ability to intuit what people need and help them make the right choices.</strong></p>
+                    <div class="share">
+                        <a href="https://twitter.com/home?status=I%20took%20this%20quiz%20to%20test%20my%20sales%20potential.%20I%E2%80%99m%20a%20sales%20Sherpa.%20What%20type%20are%20you?" target="_blank">Tweet This<span class="sprite"></span></a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://gobeyond.careers/your-potential/" target="_blank">Post to Facebook<span class="sprite"></span></a>
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://gobeyond.careers/your-potential/&title=&summary=I took the Ledcor quiz to test my sales potential. I'm a sales Sherpa: helping people choose what they need. What's your sales potential? Take the quiz to find out." target="_blank">Share on LinkedIn<span class="sprite"></span></a>
+                    </div>
+                    <p>You are endlessly curious about human behaviour. You prefer to be the observer, not the observed, and you hate being in the limelight. You notice the details, ask the right questions, and pay attention to the answers. You’re happiest when you’re improving people’s lives and helping them to get where they need to go.</p>
+<p>The best salespeople aren’t the ones with the biggest personalities, but the ones who are capable of understanding the customer’s perspective, empathizing with their problems, and helping them find the right solution. The Ledcor outbound sales team always puts the customer first.</p>
+<p>Your sales approach could be right for the Ledcor outbound sales team, and we encourage you to apply.</p>
+                </div>
+                            <div id="unhide2" class="btn apply hidden">
+                <a href="goapply.html">
+                    <span class="label">Apply Now</span>
+                </a>
+            </div>
+            <div id="unhide3"class="cta_apply hidden">
+                <a href="javascript:void(0);" id="apply_cta">
+                    <span class="label">... or get your complete sales profile here</span>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+</div>
+      </section>
+      <script>
+          function displayResult(){
+            let q1 = document.getElementsByName('question-1');
+            let q2 = document.getElementsByName('question-2');
+            let q3 = document.getElementsByName('question-3');
+            let q4 = document.getElementsByName('question-4');
+            let q5 = document.getElementsByName('question-5');
+            let q6 = document.getElementsByName('question-6');
+            let q7 = document.getElementsByName('question-7');
+            let q8 = document.getElementsByName('question-8');
+            let q9 = document.getElementsByName('question-9');
+            let B = 0;
+            let C = 0;
+            let R = 0;
+            let S = 0;
+
+            /* For question 1*/
+            for(i = 0; i < q1.length; i++) {
+                if(q1[i].checked){
+                    if(q1[i].value === "B"){
+                        B++
+                    }
+                    else if(q1[i].value === "R"){
+                        R++
+                    }
+                    else if(q1[i].value === "S"){
+                        S++
+                    }
+                    else if(q1[i].value === "C"){
+                        C++
+                    }
+                }
+            }
+          
+          for(i = 0; i < q2.length; i++) {
+                if(q2[i].checked){
+                    if(q2[i].value === "B"){
+                        B++
+                    }
+                    else if(q2[i].value === "R"){
+                        R++
+                    }
+                    else if(q2[i].value === "S"){
+                        S++
+                    }
+                    else if(q2[i].value === "C"){
+                        C++
+                    }
+                }
+            }
+          
+          for(i = 0; i < q2.length; i++) {
+                if(q3[i].checked){
+                    if(q3[i].value === "B"){
+                        B++
+                    }
+                    else if(q3[i].value === "R"){
+                        R++
+                    }
+                    else if(q3[i].value === "S"){
+                        S++
+                    }
+                    else if(q3[i].value === "C"){
+                        C++
+                    }
+                }
+            }
+          
+          for(i = 0; i < q4.length; i++) {
+                if(q4[i].checked){
+                    if(q4[i].value === "B"){
+                        B++
+                    }
+                    else if(q4[i].value === "R"){
+                        R++
+                    }
+                    else if(q4[i].value === "S"){
+                        S++
+                    }
+                    else if(q4[i].value === "C"){
+                        C++
+                    }
+                }
+            }
+          
+          for(i = 0; i < q5.length; i++) {
+                if(q5[i].checked){
+                    if(q5[i].value === "B"){
+                        B++
+                    }
+                    else if(q5[i].value === "R"){
+                        R++
+                    }
+                    else if(q5[i].value === "S"){
+                        S++
+                    }
+                    else if(q5[i].value === "C"){
+                        C++
+                    }
+                }
+            }
+          
+          for(i = 0; i < q6.length; i++) {
+                if(q6[i].checked){
+                    if(q6[i].value === "B"){
+                        B++
+                    }
+                    else if(q6[i].value === "R"){
+                        R++
+                    }
+                    else if(q6[i].value === "S"){
+                        S++
+                    }
+                    else if(q6[i].value === "C"){
+                        C++
+                    }
+                }
+            }
+          
+          for(i = 0; i < q7.length; i++) {
+                if(q7[i].checked){
+                    if(q7[i].value === "B"){
+                        B++
+                    }
+                    else if(q7[i].value === "R"){
+                        R++
+                    }
+                    else if(q7[i].value === "S"){
+                        S++
+                    }
+                    else if(q7[i].value === "C"){
+                        C++
+                    }
+                }
+            }
+          
+          for(i = 0; i < q8.length; i++) {
+                if(q8[i].checked){
+                    if(q8[i].value === "B"){
+                        B++
+                    }
+                    else if(q8[i].value === "R"){
+                        R++
+                    }
+                    else if(q8[i].value === "S"){
+                        S++
+                    }
+                    else if(q8[i].value === "C"){
+                        C++
+                    }
+                }
+            }
+          
+          for(i = 0; i < q9.length; i++) {
+                if(q9[i].checked){
+                    if(q9[i].value === "B"){
+                        B++
+                    }
+                    else if(q9[i].value === "R"){
+                        R++
+                    }
+                    else if(q9[i].value === "S"){
+                        S++
+                    }
+                    else if(q9[i].value === "C"){
+                        C++
+                    }
+                }
+            }
+            
+            const hidden1 = document.getElementById("unhide1").classList.remove("hidden")
+            const hidden2 = document.getElementById("unhide2").classList.remove("hidden")
+            const hidden3 = document.getElementById("unhide3").classList.remove("hidden")
+            const profileB = document.getElementById("Brain")
+            const profileC = document.getElementById("Challenger")
+            const profileS = document.getElementById("Sherpa")
+            const profileR = document.getElementById("Relater")
+            if(B >= C && B >= R && B >= S) {
+                profileB.classList.remove("hidden")
+            }
+            else if (C >= B && C >= R && C >= S) {
+                profileC.classList.remove("hidden")
+            }
+            else if (R >= C && R >= B && R >= S){
+                profileR.classList.remove("hidden")
+            }
+            else {
+                profileS.classList.remove("hidden")
+            }
+        }
+      </script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>'
+        );
+    </script>
+    <script src="../../../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../../../dist/js/bootstrap.min.js"></script>
+    <script src="../../../../assets/js/vendor/holder.min.js"></script>
+    <script>
+      Holder.addTheme("thumb", {
+        bg: "#55595c",
+        fg: "#eceeef",
+        text: "Thumbnail"
+      });
+    </script>
+  </body>
+</html>
